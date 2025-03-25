@@ -7,8 +7,27 @@ function capitalizeWord(stringInput, wordIndex) {}
 // 2) Funkce co přijme testScore, a vrátí odpovídající známku podle následující tabulky:
 // 0-50 -> F, 51-60 -> E, 61-70 -> D, 71-80 -> C, 81-90 -> B, 91-100 -> A, pokud je testScore mimo rozsah 0-100, nebo nevalidní hodnota funkce vrátí "INVALID SCORE"
 // například pro 75 bude výsledek "C"
-function transformScoreToGrade(testScore) {}
-
+function transformScoreToGrade(testScore) {
+  function transformScoreToGrade(testScore) {
+    if (testScore >= 90) {
+      return "A";
+    } 
+    else if (testScore >= 80) {
+      return "B";
+    } 
+    else if (testScore >= 71) {
+      return "C";
+    } 
+    else if (testScore >= 60) {
+      return "D";
+    } 
+    else if (testScore < 60) {
+      return "F";
+    } else {
+      return "Invalid grade";
+    }
+    }
+  }
 // 3) Funkce na výpočet factorialu, pomocí cyklu, vstupem je factorialNumber, výstupem bude výsledek faktoriálu
 // nevalidní vstupem je záporné číslo, nebo nečíslo, v takovém případě funkce vrátí undefined
 // faktoriál je součin všech kladných celých čísel menších nebo rovných zadanému číslu; pozor faktoriál čísla 0 je 1
